@@ -1,18 +1,4 @@
-﻿  Enemy.cpp
-c:\users\bob\documents\visual studio 2017\projects\consoleapplication5\consoleapplication5\enemy.cpp(220): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-c:\users\bob\documents\visual studio 2017\projects\consoleapplication5\consoleapplication5\enemy.cpp(228): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-  GameSystem.cpp
-  Level.cpp
-c:\users\bob\documents\visual studio 2017\projects\consoleapplication5\consoleapplication5\level.cpp(37): warning C4018: '<': signed/unsigned mismatch
-c:\users\bob\documents\visual studio 2017\projects\consoleapplication5\consoleapplication5\level.cpp(38): warning C4018: '<': signed/unsigned mismatch
-c:\users\bob\documents\visual studio 2017\projects\consoleapplication5\consoleapplication5\level.cpp(159): warning C4018: '<': signed/unsigned mismatch
-c:\users\bob\documents\visual studio 2017\projects\consoleapplication5\consoleapplication5\level.cpp(249): warning C4018: '<': signed/unsigned mismatch
-  Main.cpp.cpp
-  Player.cpp
-c:\users\bob\documents\visual studio 2017\projects\consoleapplication5\consoleapplication5\player.cpp(86): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'std::string'
-c:\users\bob\documents\visual studio 2017\projects\consoleapplication5\consoleapplication5\player.cpp(102): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-c:\users\bob\documents\visual studio 2017\projects\consoleapplication5\consoleapplication5\player.cpp(112): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-c:\users\bob\documents\visual studio 2017\projects\consoleapplication5\consoleapplication5\player.cpp(463): warning C4474: 'printf' : too many arguments passed for format string
-  c:\users\bob\documents\visual studio 2017\projects\consoleapplication5\consoleapplication5\player.cpp(463): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
-  Generating Code...
-  ConsoleApplication5.vcxproj -> C:\Users\bob\Documents\Visual Studio 2017\Projects\ConsoleApplication5\Debug\ConsoleApplication5.exe
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(391,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (ConsoleApplication5.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  MapGen.cpp
+c:\users\bob\documents\visual studio 2017\projects\roguedescent_lasthack\consoleapplication5\mapgen.cpp(11): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  ConsoleApplication5.vcxproj -> C:\Users\bob\Documents\Visual Studio 2017\Projects\RogueDescent_LastHack\Debug\RogueDescent_LastHack.exe
