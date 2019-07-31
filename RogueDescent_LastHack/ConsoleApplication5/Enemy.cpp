@@ -26,6 +26,7 @@ Enemy::Enemy(
 	_tile = tile;
 	_level = level;
 	_enemyType = enemyType;
+
 	switch (enemyType)
 	{
 	case 's': //strong man
@@ -101,7 +102,7 @@ Enemy::Enemy(
 	} 
 	
 	// placeholder algo for experience value, may need tuning.
-	_experience = level * level;
+	_experience = ((level * level) + 49);
 	_armor = ((_baseDex / 2) + 10);
 	_food = food;
 	_fireR = fireR;
@@ -287,8 +288,10 @@ int Enemy::takeDamage(int attack, int damage, char dmgType)
 		}
 		
 	}
-
-	printf("The %s evades the attack!\n", _name.c_str());
+	else if (attack <= 0)
+	{
+		printf("The %s evades the attack!\n", _name.c_str());
+	}
 	system("PAUSE");
 	return 0;
 
@@ -311,4 +314,61 @@ void Enemy::getPosition(int &x, int &y)
 char Enemy::get_dmgType()
 {
 	return _dmgType;
+}
+
+char Enemy::getMove(int playerX, int playerY)
+{
+	static default_random_engine randomEngine(time(NULL));
+	uniform_int_distribution<int> moveRoll(0, 6);
+
+	int distance;
+	int dx = _x - playerX;
+	int dy = _y - playerY;
+	int adx = abs(dx);
+	int ady = abs(dy);
+
+	distance = adx + ady;
+
+	if (distance <= 10)
+	{
+		// Move along X axis
+		if (adx > ady) {
+			if (dx > 0) 
+			{
+				return 'a';
+			} 
+			else 
+			{
+				return 'd';
+			}
+		}
+		else
+		{
+			if (dy > 0)
+			{
+				return 'w';
+			}
+			else
+			{
+				return 's';
+			}
+		}
+	}
+
+	int randomMove = moveRoll(randomEngine);
+
+	switch (randomMove) 
+	{
+	case 0:
+		return 'a';
+	case 1:
+		return 'w';
+	case 2:
+		return 's';
+	case 3:
+		return 'd';
+	default:
+		return '.';
+
+	}
 }

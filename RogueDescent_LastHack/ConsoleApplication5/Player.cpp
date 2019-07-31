@@ -1,6 +1,7 @@
 #include "Player.h"
 #include <random>
 #include <ctime>
+#include <cstdlib>
 
 using namespace std;
 // Constructor, just initializes position to zero.
@@ -82,15 +83,7 @@ void Player::init(
 	_dice = 1;
 	_dmgType = 'B';
 
-	printf("Level: %d \n", _level);
-	printf("Name: %s \n", _name);
-	printf("Str: %d \n", _Str);
-	printf("Dex: %d \n", _Dex);
-	printf("Con: %d \n", _Con);
-	printf("Int: %d \n", _Int);
-	printf("die: %d \n", _die);
-	printf("dice: %d \n", _dice);
-	printf("Health: %d \n", _currentHealth);
+ 
 	
 	system("PAUSE");
 
@@ -114,14 +107,10 @@ int Player::damage() {
 	uniform_int_distribution<int> damageRoll(1, _die);
 
 	int critResult = (critCheck(randomEngine));
-	int critMult = 0;
+	int critMult = 1;
 	if (critResult = 20) 
 	{
 		int critMult = _crit;
-	}
-	else
-	{
-		int critMult = 1;
 	}
 
 	int dmg = 0;
@@ -301,6 +290,7 @@ void Player::add_Exp(int experience, char playerType)
 {
 	_experience += experience;
 	int threshold = ((_level * _level) * 100);
+	int tempMain = _mainStat;
 	while (_experience > threshold)
 	{
 		printf("You have become more powerful!\n");
@@ -370,6 +360,8 @@ void Player::add_Exp(int experience, char playerType)
 		_currentHealth = _maxHealth;
 		_maxAP += ((_Int / 2) + 10);
 		_currentAP = _maxAP;
+		_attackPower += (tempMain - _mainStat);
+		_attackMod += (tempMain - _mainStat);
 		_level++;
 		system("PAUSE");
 	}
@@ -392,6 +384,90 @@ void Player::add_Int(int amount)
 	_Int += amount;
 }
 
+void Player::add_crit(int amount)
+{
+	_crit += amount;
+}
+void Player::add_armor(int amount)
+{
+	_armor += amount;
+}
+void Player::add_capacity(int amount)
+{
+	_capacity += amount;
+}
+void Player::add_food(int amount)
+{
+	_food += amount;
+}
+void Player::add_luck(int amount)
+{
+	_luck += amount;
+}
+void Player::add_fireR(int amount)
+{
+	_fireR += amount;
+}
+void Player::add_iceR(int amount)
+{
+	_iceR += amount;
+}
+void Player::add_lightningR(int amount)
+{
+	_lightningR += amount;
+}
+void Player::add_earthR(int amount)
+{
+	_earthR += amount;
+}
+void Player::add_magicR(int amount)
+{
+	_magicR += amount;
+}
+void Player::add_slashR(int amount)
+{
+	_slashR += amount;
+}
+void Player::add_bludgeonR(int amount)
+{
+	_bludgeonR += amount;
+}
+void Player::add_pierceR(int amount)
+{
+	_pierceR += amount;
+}
+void Player::add_currentHealth(int amount)
+{
+	_currentHealth += amount;
+}
+void Player::add_maxHealth(int amount)
+{
+	_maxHealth += amount;
+}
+void Player::add_currentAP(int amount)
+{
+	_currentAP += amount;
+}
+void Player::add_maxAP(int amount)
+{
+	_maxAP += amount;
+}
+void Player::add_attackPower(int amount)
+{
+	_attackPower += amount;
+}
+void Player::add_attackMod(int amount)
+{
+	_attackMod += amount;
+}
+void Player::add_die(int amount)
+{
+	_die += amount;
+}
+void Player::add_dice(int amount)
+{
+	_dice += amount;
+}
 
 // Getters
 
@@ -411,6 +487,142 @@ char Player::get_playerType()
 	return _playerType;
 }
 
+int Player::get_level()
+{
+	return _level;
+}
+string Player::get_name()
+{
+	return _name;
+}
+int Player::get_baseStr()
+{
+	return _baseStr;
+}
+int Player::get_baseDex()
+{
+	return _baseDex;
+}
+int Player::get_baseCon()
+{
+	return _baseCon;
+}
+int Player::get_baseInt()
+{
+	return _baseInt;
+}
+int Player::get_Str()
+{
+	return _Str;
+}
+int Player::get_Dex()
+{
+	return _Dex;
+}
+int Player::get_Con()
+{
+	return _Con;
+}
+int Player::get_Int()
+{
+	return _Int;
+}
+int Player::get_mainStat()
+{
+	return _mainStat;
+}
+int Player::get_crit()
+{
+	return _crit;
+}
+int Player::get_experience()
+{
+	return _experience;
+}
+int Player::get_armor()
+{
+	return _armor;
+}
+int Player::get_capacity()
+{
+	return _capacity;
+}
+int Player::get_food()
+{
+	return _food;
+}
+int Player::get_luck()
+{
+	return _luck;
+}
+int Player::get_fireR()
+{
+	return _fireR;
+}
+int Player::get_iceR()
+{
+	return _iceR;
+}
+int Player::get_lightningR()
+{
+	return _lightningR;
+}
+int Player::get_earthR()
+{
+	return _earthR;
+}
+int Player::get_magicR()
+{
+	return _magicR;
+}
+int Player::get_slashR()
+{
+	return _slashR;
+}
+int Player::get_bludgeonR()
+{
+	return _bludgeonR;
+}
+int Player::get_pierceR()
+{
+	return _pierceR;
+}
+int Player::get_currentHealth()
+{
+	return _currentHealth;
+}
+int Player::get_maxHealth()
+{
+	return _maxHealth;
+}
+int Player::get_currentAP()
+{
+	return _currentAP;
+}
+int Player::get_maxAP()
+{
+	return _maxAP;
+}
+int Player::get_attackPower()
+{
+	return _attackPower;
+}
+int Player::get_attackMod()
+{
+	return _attackMod;
+}
+int Player::get_die()
+{
+	return _die;
+}
+int Player::get_dice()
+{
+	return _dice;
+}
+char Player::get_dmgType()
+{
+	return _dmgType;
+}
 int Player::takeDamage(int attack, int damage, char dmgType)
 {
 	// this sets the damage type of the player against the resistance of the enemy
@@ -460,7 +672,10 @@ int Player::takeDamage(int attack, int damage, char dmgType)
 		}
 		
 	}
-	printf("You evade the attack!\n", _name.c_str());
+	else if (attack <= 0)
+	{
+		printf("You evade the attack!\n", _name.c_str());
+	}
 	system("PAUSE");
 	return 0;
 

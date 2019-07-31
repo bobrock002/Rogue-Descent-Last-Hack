@@ -71,7 +71,27 @@ public:
 	void add_Dex(int amount);
 	void add_Con(int amount);
 	void add_Int(int amount);
-
+	void add_crit(int amount);
+	void add_armor(int amount);
+	void add_capacity(int amount);
+	void add_food(int amount);
+	void add_luck(int amount);
+	void add_fireR(int amount);
+	void add_iceR(int amount);
+	void add_lightningR(int amount);
+	void add_earthR(int amount);
+	void add_magicR(int amount);
+	void add_slashR(int amount);
+	void add_bludgeonR(int amount);
+	void add_pierceR(int amount);
+	void add_currentHealth(int amount);
+	void add_maxHealth(int amount);
+	void add_currentAP(int amount);
+	void add_maxAP(int amount);
+	void add_attackPower(int amount);
+	void add_attackMod(int amount);
+	void add_die(int amount);
+	void add_dice(int amount);
 
 	// Getters for everything.
 
@@ -84,6 +104,46 @@ public:
 	string get_name() { return _name; }
 
 	int takeDamage(int attack, int damage, char dmgType);
+	
+	int get_level();
+	string get_name();
+	int get_baseStr();
+	int get_baseDex();
+	int get_baseCon();
+	int get_baseInt();
+	int get_Str();
+	int get_Dex();
+	int get_Con();
+	int get_Int();
+	int get_mainStat();
+	int get_crit();
+	int get_experience();
+	int get_armor();
+	int get_capacity();
+	int get_food();
+	int get_luck();
+	int get_fireR();
+	int get_lightningR();
+	int get_iceR();
+	int get_earthR();
+	int get_magicR();
+	int get_slashR();
+	int get_bludgeonR();
+	int get_pierceR();
+	int get_currentHealth();
+	int get_maxHealth();
+	int get_currentAP();
+	int get_maxAP();
+	int get_attackPower();
+	int get_attackMod();
+	int get_die();
+	int get_dice();
+	char get_dmgType();
+
+	// Equip an item
+
+	void playerEquip();
+	void playerDequip();
 
 private:
 	// Properties

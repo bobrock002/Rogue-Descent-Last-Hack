@@ -1,5 +1,7 @@
 #pragma once
 #include <string>
+
+
 using namespace std;
 
 class Enemy
@@ -53,6 +55,11 @@ public:
 	void getPosition(int &x, int &y);
 	char get_dmgType();
 	string getName() { return _name; }
+	char getTile() { return _tile; }
+
+	//Movement
+
+	char getMove(int playerX, int playerY);
 
 
 private:

@@ -155,23 +155,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Armor.h" />
+    <ClInclude Include="Items.h" />
     <ClInclude Include="Enemy.h" />
     <ClInclude Include="Food.h" />
     <ClInclude Include="GameSystem.h" />
+    <ClInclude Include="MapGen.h" />
     <ClInclude Include="Level.h" />
     <ClInclude Include="Player.h" />
-    <ClInclude Include="Weapons.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Armor.cpp" />
+    <ClCompile Include="Items.cpp" />
     <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="Food.cpp" />
     <ClCompile Include="GameSystem.cpp" />
     <ClCompile Include="Level.cpp" />
-    <ClCompile Include="Main.cpp.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="MapGen.cpp" />
     <ClCompile Include="Player.cpp" />
-    <ClCompile Include="Weapons.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="Level1.txt" />

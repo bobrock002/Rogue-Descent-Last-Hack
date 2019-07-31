@@ -2,12 +2,14 @@
 #include <iostream>
 #include <conio.h>
 #include "Enemy.h"
+#include "Level.h"
 
 //Contstructor sets up game.
 
 
 GameSystem::GameSystem(string levelFileName)
 {
+	_level.setLevel(1); // initialize starting dungeon level at value 1.
 	string name;
 	char playerType;
 	cout << "Choose a name: ";
@@ -28,7 +30,7 @@ void GameSystem::playGame()
 	{
 		_level.print();
 		playerMove();
-
+		_level.updateEnemies(_player);
 	}
 }
 
