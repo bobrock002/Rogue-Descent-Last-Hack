@@ -1,0 +1,4 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(391,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (ConsoleApplication5.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  MapGen.cpp
+c:\users\bob\documents\visual studio 2017\projects\roguedescent_lasthack\consoleapplication5\mapgen.cpp(11): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  ConsoleApplication5.vcxproj -> C:\Users\bob\Documents\Visual Studio 2017\Projects\RogueDescent_LastHack\Debug\RogueDescent_LastHack.exe
