@@ -1,0 +1,24 @@
+﻿  pch.cpp
+  Enemy.cpp
+c:\users\bob\documents\visual studio 2017\projects\rdlh_final\rdlh_final\enemy.cpp(221): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\bob\documents\visual studio 2017\projects\rdlh_final\rdlh_final\enemy.cpp(229): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\bob\documents\visual studio 2017\projects\rdlh_final\rdlh_final\enemy.cpp(320): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  GameSystem.cpp
+  Items.cpp
+  Level.cpp
+c:\users\bob\documents\visual studio 2017\projects\rdlh_final\rdlh_final\level.cpp(38): warning C4018: '<': signed/unsigned mismatch
+c:\users\bob\documents\visual studio 2017\projects\rdlh_final\rdlh_final\level.cpp(39): warning C4018: '<': signed/unsigned mismatch
+c:\users\bob\documents\visual studio 2017\projects\rdlh_final\rdlh_final\level.cpp(215): warning C4018: '<': signed/unsigned mismatch
+c:\users\bob\documents\visual studio 2017\projects\rdlh_final\rdlh_final\level.cpp(267): warning C4018: '<': signed/unsigned mismatch
+c:\users\bob\documents\visual studio 2017\projects\rdlh_final\rdlh_final\level.cpp(409): warning C4018: '<': signed/unsigned mismatch
+c:\users\bob\documents\visual studio 2017\projects\rdlh_final\rdlh_final\level.cpp(402): warning C4101: 'playerType': unreferenced local variable
+c:\users\bob\documents\visual studio 2017\projects\rdlh_final\rdlh_final\level.cpp(454): warning C4018: '<': signed/unsigned mismatch
+c:\users\bob\documents\visual studio 2017\projects\rdlh_final\rdlh_final\level.cpp(515): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Main.cpp
+  Player.cpp
+c:\users\bob\documents\visual studio 2017\projects\rdlh_final\rdlh_final\player.cpp(96): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\bob\documents\visual studio 2017\projects\rdlh_final\rdlh_final\player.cpp(106): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Generating code
+  All 531 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  RDLH_Final.vcxproj -> C:\Users\bob\Documents\Visual Studio 2017\Projects\RDLH_Final\Release\RDLH_Final.exe

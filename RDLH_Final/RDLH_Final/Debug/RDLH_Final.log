@@ -1,0 +1,4 @@
+﻿  Player.cpp
+c:\users\bob\documents\visual studio 2017\projects\rdlh_final\rdlh_final\player.cpp(96): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\bob\documents\visual studio 2017\projects\rdlh_final\rdlh_final\player.cpp(106): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  RDLH_Final.vcxproj -> C:\Users\bob\Documents\Visual Studio 2017\Projects\RDLH_Final\Debug\RDLH_Final.exe
